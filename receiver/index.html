@@ -11,13 +11,13 @@
 <script src="https://www.gstatic.com/cast/js/receiver/1.0/cast_receiver.js"></script>
 <script>
 	$(function() {
-		var receiver = new cast.receiver.Receiver('*** YOUR APP ID ****', ['*** YOUR NAMESPACE ***']),
-			channelHandler = new cast.receiver.ChannelHandler('*** YOUR NAMESPACE ***'),
+		var receiver = new cast.receiver.Receiver('e9e06037-da5e-45d3-8d2a-8eafb811edab', ['juicecast']),
+			channelHandler = new cast.receiver.ChannelHandler('juicecast'),
 			$messages = $('.messages'),
 			$body = $('body');
 		
 		channelHandler.addChannelFactory(
-			receiver.createChannelFactory('*** YOUR NAMESPACE ***'));
+			receiver.createChannelFactory('juicecast'));
 
 		receiver.start();
 
