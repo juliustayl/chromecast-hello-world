@@ -9,10 +9,6 @@ handlers:
   static_files: rcvr/css/receiver.css
   upload: rcvr/css/receiver.css
   
-#- url: /rcvr/css/(*.css)
-#  static_files: rcvr/css/\1
-#  upload: rcvr/css/receiver.css
-  
 - url: /rcvr/receiver.html
   static_files: rcvr/receiver.html
   upload: rcvr/receiver.html
