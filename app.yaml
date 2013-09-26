@@ -5,8 +5,9 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /rcvr/css
-  static_dir: css
+- url: /rcvr/css/receiver.css
+  static_files: rcvr/css/receiver.css
+  upload: rcvr/css/receiver.css
   
 #- url: /rcvr/css/(*.css)
 #  static_files: rcvr/css/\1
